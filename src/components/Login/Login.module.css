@@ -1,0 +1,107 @@
+.modal::backdrop{
+    background-color: rgba(128, 128, 128, 0.5);  
+}
+
+
+.container_login{
+    
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  background: linear-gradient(90deg, rgba(76, 175, 80, 0.5) 0%, rgba(76, 175, 80, 1) 100%);
+  border-radius: 8px;
+  width: 40%;
+  height: 38%;
+  
+}
+
+.form_login{
+  display: flex;
+  flex-direction: column;
+}
+
+.form_login_text{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.form_login_text h1{
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 10px;
+  
+}
+
+.container_form_input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.input{
+  width:90%; /* Ancho del input */
+  height: 50px;
+  margin-bottom: 10px;
+  align-items: center;
+  border-radius: 90px;
+  border: none;
+  text-indent: 10px;
+}
+
+.input::placeholder{
+  text-indent: 10px;
+}
+
+
+.input:focus{
+  border-color: blue;
+}
+
+.container_button_login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_login{
+  width:90%; /* Ancho del input */
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  border-radius: 90px;
+  border: none;
+  background-color: yellowgreen;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.container_remember_login{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  padding: 20px;
+}
+
+.container_remember_login p{
+ margin: 20px;
+ color: white;
+ 
+}
+.button_close{
+  position: fixed; /* O absolute según tus necesidades */
+  top: 15px; /* Ajusta la distancia desde la parte superior */
+  right: 20px; /* Ajusta la distancia desde la derecha */
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border-radius: 90px;
+  border:none;
+}

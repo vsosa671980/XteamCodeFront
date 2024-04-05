@@ -1,0 +1,90 @@
+.container_card{
+
+    display: grid;
+    height: 600px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    background: linear-gradient(90deg, rgba(76, 175, 80, 0.5) 0%, rgba(76, 175, 80, 1) 100%);
+}
+.container_card_text{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(90deg, rgba(76, 175, 80, 0.5) 0%, rgba(76, 175, 80, 1) 100%);
+}
+
+.container_card_img{
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+    
+}
+
+.container_form{
+    grid-column: 2/6;
+    grid-row: 1/9;
+   
+}
+
+.form{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   gap: 20PX;
+   align-items: center;
+  
+}
+
+.container_inputs{
+    display: flex;
+    gap: 10px;
+  
+    flex-wrap: wrap;
+
+}
+
+.container_inputs label {
+    margin-right: 5px; 
+    color: white;
+}
+
+.container_inputs input {
+    height: 40px;
+    width: 190px;
+    border-radius: 60px;
+    border: none;
+    text-indent: 10px;
+}
+
+.container_inputs input::placeholder {
+    text-indent: 10px;
+}
+
+.container_inputs input:focus {
+    border-color:blue;
+}
+
+.container_button_register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_register{
+   color: white;
+   background-color: yellowgreen;
+   cursor: pointer;
+   font-size: 1.2rem;
+   border-radius: 90px;
+   padding: 15px;
+   border: none;
+}
+.container_label_input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

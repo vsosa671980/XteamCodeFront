@@ -1,0 +1,32 @@
+
+.general_nav_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100vp;
+   
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+    
+}
+
+.nav_container_img li{
+    list-style: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.nav_container_news{
+    display: flex;
+   
+}
+
+
+.nav_container_news li{
+    display: flex;
+    padding: 20px;
+}
+
+
