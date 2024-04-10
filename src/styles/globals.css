@@ -18,3 +18,13 @@
 a{
     text-decoration: none;
 }
+
+.generalGreenButton{
+    background-color: red;
+    padding: 10px;
+    background-color: yellowgreen;
+    border: none;
+    cursor: pointer;
+    color: white;
+
+}

@@ -1,16 +1,25 @@
-.container_card{
+.container_img_club{
+    background-image: url("../../assets/img/xteam.webp");
+    
+    height: 100%;
+}
 
+.container_card{
     display: grid;
-    height: 600px;
+    height:100%;
+    padding: 100px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     background: linear-gradient(90deg, rgba(76, 175, 80, 0.5) 0%, rgba(76, 175, 80, 1) 100%);
 }
 .container_card_text{
     display: flex;
     justify-content: center;
-    color: white;
     background: linear-gradient(90deg, rgba(76, 175, 80, 0.5) 0%, rgba(76, 175, 80, 1) 100%);
+    align-items: ceter;
+    color: white;
+    padding: 50px;
+    flex-wrap: wrap;
 }
 
 .container_card_img{
@@ -21,7 +30,7 @@
 }
 
 .container_form{
-    grid-column: 2/6;
+    grid-column: 1/6;
     grid-row: 1/9;
    
 }
@@ -86,5 +95,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+
+.container_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    grid-column: 1/6;
 
 }
