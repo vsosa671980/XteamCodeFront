@@ -22,6 +22,10 @@
     flex-wrap: wrap;
 }
 
+.container_card_text h1{
+    font-weight: 250 ;
+}
+
 .container_card_img{
     grid-column: 1/2;
     grid-row: 1/3;

@@ -12,14 +12,47 @@
     
 }
 
+.nav_container_img{
+    display: flex;
+    gap:30px
+}
+
+
 .nav_container_img li{
     list-style: none;
     font-weight: 600;
     letter-spacing: 2px;
 }
 
+.nav_container_menu {
+     display: flex;
+
+     justify-content:space-between;
+     align-items: center;
+     gap: 40px;
+     background-color: green;
+     color: white;
+}
+
+.link_menus{
+    color: white;
+}
+
+.link_menus:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.nav_container_menu li{
+   padding: 20px 30px;
+   
+}
+
 .nav_container_news{
     display: flex;
+   
    
 }
 
@@ -29,4 +62,11 @@
     padding: 20px;
 }
 
+/*
+*Images
+*
+*/
 
+.imgLogo{
+    width: 150px;
+}

@@ -1,40 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Xteam Project
 
-## Getting Started
+![Xteam](imagesProject/Logo.webp)
 
-First, run the development server:
+## Goals for this Application
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The goal of the project is to provide the necessary tools for a sports company to improve the administration of their users, manage invoices, and organize their operations.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project is developed using the React.js framework for the frontend and Node.js for the backend.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+The database for the project is relational, using MySQL.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Components of the Project
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Main Page
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This is the entry page of the app and displays the general elements of the project.
 
-## Learn More
+![Main Page](imagesProject/Inicio.png)
 
-To learn more about Next.js, take a look at the following resources:
+### Login Page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This is the login page of the app for login or registration of users.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![Login Page](imagesProject/Login.png)
 
-## Deploy on Vercel
+### Register Page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This is the registration page of the app.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Register Page](imagesProject/Register.png)
+
+### Subscription Options Page
+
+Users can select their preferred subscription option.
+
+![Subscription Options](imagesProject/subscripciones.png)
+
+

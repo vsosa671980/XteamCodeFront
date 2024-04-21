@@ -93,15 +93,21 @@
 .container_remember_login p{
  margin: 20px;
  color: white;
+}
+
+.container_remember_login p:hover{
+  margin: 20px;
+  color: blue;
+  cursor: pointer;
+ }
+
+ .button_register{
+   color: white;
+ }
+
+ .button_register:hover{
+    color: blue;
+    cursor: pointer;
+   }
  
-}
-.button_close{
-  position: fixed; /* O absolute según tus necesidades */
-  top: 15px; /* Ajusta la distancia desde la parte superior */
-  right: 20px; /* Ajusta la distancia desde la derecha */
-  padding: 10px;
-  background-color: blue;
-  color: white;
-  border-radius: 90px;
-  border:none;
-}
+

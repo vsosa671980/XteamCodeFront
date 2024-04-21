@@ -2,6 +2,7 @@
 
 import React from 'react';
 import style from "./Login.module.css";
+import Link from 'next/link';
 
 interface LoginComponentProps {
   modalRef: React.RefObject<HTMLDialogElement>;
@@ -36,8 +37,8 @@ export default function LoginComponent({ modalRef }: LoginComponentProps) {
             </div>
             <div className={style.container_remember_login}>
               <p>Recordar contraseña</p>
-              <p>Registrarse</p>
-              <button onClick={closeModal} className={style.button_close}>Salir</button>
+              <Link href="/user/Register" className={style.button_register}>Registrarse</Link>
+            
             </div>
             
           </form>

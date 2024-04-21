@@ -1,0 +1,38 @@
+
+.container_card_general{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom: 60px;
+    
+    
+}
+.container_card{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background-color: green;
+    border: none;
+   /* Color de fondo más claro */
+ 
+
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    letter-spacing: 2px;
+   
+   
+}
+
+.img_container{
+  height: 200px;
+}
+
+
+.img_container:hover{
+    cursor: pointer;
+  }
+  
+  
+

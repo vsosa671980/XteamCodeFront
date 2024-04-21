@@ -67,7 +67,7 @@ export default function RegisterUserComponent() {
                     <input type="file" id="img" hidden></input>
                       <label htmlFor="img">
                         Subir Imagen
-                        <img src="../../img/cloud-arrow-up-solid.svg" alt="Subir imagen"></img>
+                        <img src="/assets/img/cloud-arrow-up-solid.svg" alt="Subir imagen"></img>
                        </label>
                         
                     </div>
