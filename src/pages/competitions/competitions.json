@@ -1,0 +1,85 @@
+{
+    "datos": [
+      {
+        "id": 1,
+        "type": "evento",
+        "date": "2024-04-29",
+        "img": "evento1.jpg",
+        "location": "Ciudad X",
+        "descripcion": "Descripción del evento 1"
+      },
+      {
+        "id": 2,
+        "type": "noticia",
+        "date": "2024-04-28",
+        "img": "noticia1.jpg",
+        "location": "Ciudad Y",
+        "descripcion": "Descripción de la noticia 1"
+      },
+      {
+        "id": 3,
+        "type": "oferta",
+        "date": "2024-04-27",
+        "img": "oferta1.jpg",
+        "location": "Ciudad Z",
+        "descripcion": "Descripción de la oferta 1"
+      },
+      {
+        "id": 4,
+        "type": "evento",
+        "date": "2024-04-26",
+        "img": "evento2.jpg",
+        "location": "Ciudad A",
+        "descripcion": "Descripción del evento 2"
+      },
+      {
+        "id": 5,
+        "type": "noticia",
+        "date": "2024-04-25",
+        "img": "noticia2.jpg",
+        "location": "Ciudad B",
+        "descripcion": "Descripción de la noticia 2"
+      },
+      {
+        "id": 6,
+        "type": "oferta",
+        "date": "2024-04-24",
+        "img": "oferta2.jpg",
+        "location": "Ciudad C",
+        "descripcion": "Descripción de la oferta 2"
+      },
+      {
+        "id": 7,
+        "type": "evento",
+        "date": "2024-04-23",
+        "img": "evento3.jpg",
+        "location": "Ciudad D",
+        "descripcion": "Descripción del evento 3"
+      },
+      {
+        "id": 8,
+        "type": "noticia",
+        "date": "2024-04-22",
+        "img": "noticia3.jpg",
+        "location": "Ciudad E",
+        "descripcion": "Descripción de la noticia 3"
+      },
+      {
+        "id": 9,
+        "type": "oferta",
+        "date": "2024-04-21",
+        "img": "oferta3.jpg",
+        "location": "Ciudad F",
+        "descripcion": "Descripción de la oferta 3"
+      },
+      {
+        "id": 10,
+        "type": "evento",
+        "date": "2024-04-20",
+        "img": "evento4.jpg",
+        "location": "Ciudad G",
+        "descripcion": "Descripción del evento 4"
+      }
+    ]
+  }
+  

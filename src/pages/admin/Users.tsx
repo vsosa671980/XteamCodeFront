@@ -7,10 +7,6 @@ import { create } from 'domain'
 export default function users() {
   
 
-
-  
-  
-
   const usersList = [
     {name:"Vicente",
      surname:"Sosa",

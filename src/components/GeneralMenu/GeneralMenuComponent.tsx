@@ -35,10 +35,10 @@ export default function GeneralMenuComponent() {
                     {userRoles === "admin" && (
                          <div className={style.nav_container_menu}> 
                           <li><Link href="/admin/Users" className={style.link_menus}>Usuarios</Link></li>
-                            <li><Link href="#" className={style.link_menus}>Entrenamientos</Link></li>
+                            <li><Link href="/trainings/ListTraings" className={style.link_menus}>Entrenamientos</Link></li>
                             <li><Link href="#" className={style.link_menus}>Noticias</Link></li>
-                            <li><Link href="#" className={style.link_menus}>Competiciones</Link></li>
-                            <li><Link href="#" className={style.link_menus}>Pagos</Link></li>
+                            <li><Link href="/competitions/ListCompetitions" className={style.link_menus}>Competiciones</Link></li>
+                            <li><Link href="#" className={style.link_menus}>Subscripciones</Link></li>
                           </div>
                     )}
                    
