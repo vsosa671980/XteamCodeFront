@@ -2,9 +2,10 @@ import React from 'react'
 import datos from  "./training.json"
 import GeneralMenuComponent from '@/components/GeneralMenu/GeneralMenuComponent'
 import GenerateTable from '@/hooks/GenerateTable'
+import CreateButton from '@/components/createElements/CreateButton'
 export default function ListTraings() {
-    const tableName:string = "Competitions"
-
+    
+  const tableName:string = "Trainings"
     const data = datos.datos
     const jsonData = JSON.parse(JSON.stringify(data));
     const imgActive = [
@@ -18,6 +19,7 @@ export default function ListTraings() {
     
     <div>
         <GeneralMenuComponent />
+        <CreateButton tableName={tableName}/>
         <div>
             {GenerateTable.create(jsonData,imgActive,tableName)}
 

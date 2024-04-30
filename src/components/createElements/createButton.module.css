@@ -1,0 +1,31 @@
+
+.general_container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.button{
+    color:white;
+    padding: 10px 40px;
+    background-color: yellowgreen;
+    border:none;
+    margin-right: 27px;
+    margin-bottom:20px;
+    cursor : pointer;
+}
+
+.input_search{
+    width: 250px;
+    height: 35.56px;
+    margin-bottom :20px;
+    margin-right: 27px;
+    text-indent: 10px;
+    border-radius: 20px;
+    border-color: yellowgreen;
+}
+
+.input_search:focus{
+    border-color: aqua;
+}

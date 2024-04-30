@@ -38,7 +38,7 @@ export default function GeneralMenuComponent() {
                             <li><Link href="/trainings/ListTraings" className={style.link_menus}>Entrenamientos</Link></li>
                             <li><Link href="#" className={style.link_menus}>Noticias</Link></li>
                             <li><Link href="/competitions/ListCompetitions" className={style.link_menus}>Competiciones</Link></li>
-                            <li><Link href="#" className={style.link_menus}>Subscripciones</Link></li>
+                            <li><Link href="/subcriptions/listsubcriptions" className={style.link_menus}>Subscripciones</Link></li>
                           </div>
                     )}
                    

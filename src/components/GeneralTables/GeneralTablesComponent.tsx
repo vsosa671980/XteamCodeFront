@@ -68,14 +68,20 @@ export default function GeneralTablesComponent<T extends Record<string, any>>({d
                                   </Link>
                                 </td> : null
                              }
-
                         </tr>
                     ))}
+                  
                 </tbody>
             </table>
-           
 
-           
+            <tr className={style.pagination}>
+                        <td><img src="/assets/img/flecha-atras.png" className={style.img_pagination}></img></td>
+                        <td className={style.number_page_active}>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td><img src="/assets/img/flecha-siguiente.png" className={style.img_pagination}></img></td>
+            </tr>
         </div>
     );
 }

@@ -3,6 +3,7 @@ import GeneralTablesComponent from '@/components/GeneralTables/GeneralTablesComp
 import React from 'react'
 import GenerateTable from '@/hooks/GenerateTable'
 import { create } from 'domain'
+import CreateButton from '@/components/createElements/CreateButton'
 
 export default function users() {
   
@@ -54,6 +55,7 @@ const tableName = {
   return (
     <div>
         <GeneralMenuComponent />
+        <CreateButton />
         <div>
            {GenerateTable.create(usersList,imgActive,tableName)}
         </div>
