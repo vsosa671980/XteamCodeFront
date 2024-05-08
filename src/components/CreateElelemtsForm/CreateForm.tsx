@@ -1,34 +1,44 @@
 import React, { ReactNode, useState } from 'react'
 import GeneralMenuComponent from '../GeneralMenu/GeneralMenuComponent'
 import style from "./createform.module.css"
+import Created from '../ModalAdvices/Created';
+import { handleSendData } from '@/helpers/sendDataForCreate'
 
 
 interface Props<T> {
     data: T[];
     title:string// Usamos el tipo genérico T para definir el tipo del array
     receivedData:any
+    url:string //
 }
 
-export default function CreateForm<T extends ReactNode>({ data,title }: Props<T>) {
+export default function CreateForm<T extends ReactNode>({ data,title,receivedData,url}: Props<T>) {
 
-    const [dataFrom,setDataForm] = useState("");
-
-    const handelSubmitForm = (event: { preventDefault: () => void; target: any; })=>
+    const handelSubmitForm =async (event: { preventDefault: () => void; target: any; })=>
         {
+         // Remove the normal shape of the form
          event.preventDefault()
+         //Create a new formFataObject
          const formData = new FormData(event.target)
-         //Create and variable with types
+         //Create Object empty
          const object: { [key: string]: any } = {}; 
-         //Obtein the key(name, value) of each input
+         //Obtein the key(name, value) of each input for creating the object
          formData.forEach((value, key) => {
              object[key] = value
+          
+             
          })
-         
+         //Call the received Function passing url and Object
+         //Send the data to server
+         const response = await handleSendData(url,object)
+         //Call the received Function passing url and Object
+         receivedData(response)
+    
+        
     }
 
     return ( 
         <div>
-        
             <div className={style.general_container}>
                 <h1 className={style.title_form}>{title}</h1>
                 <form className={style.form_container} id="Form" onSubmit={handelSubmitForm}>
@@ -40,7 +50,9 @@ export default function CreateForm<T extends ReactNode>({ data,title }: Props<T>
                                          <label htmlFor={item?.toString()}>{item}</label >
                                     </div>
                                     <div>
-                                       <input type="text" id={item?.toString()} className={style.input} name={item?.toString()}/>
+                                       { item === "description"? 
+                                       <textarea id={item?.toString()} className={style.input} name={item?.toString()}></textarea> :
+                                       <input type="text" id={item?.toString()} className={style.input} name={item?.toString()}/>}
                                     </div>
                                     
                                 </div>
@@ -55,10 +67,8 @@ export default function CreateForm<T extends ReactNode>({ data,title }: Props<T>
             </div>
         </div>
 
-    )
-}
+    
 
-function receivedData(nuevosDatos: string) {
-    throw new Error('Function not implemented.');
+    )
 }
 

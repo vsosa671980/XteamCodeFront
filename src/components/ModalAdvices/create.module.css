@@ -1,0 +1,42 @@
+.modal::backdrop{
+    background-color: rgba(128, 128, 128, 0.5);  
+}
+
+.container_modal{
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(90deg, rgba(76, 175, 80, 0.5) 0%, rgba(76, 175, 80, 1) 100%);
+  border-radius: 8px;
+  width: 35%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.container_modal h1{
+    color: white;
+    padding: 10px;
+    letter-spacing: 5px;
+}
+
+.container_modal button{
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+    background-color:white;
+    cursor: pointer;
+    color: #4CAF50;
+}
+
+
+.container_modal button:hover{
+    padding: 17px 27px;
+   
+}
