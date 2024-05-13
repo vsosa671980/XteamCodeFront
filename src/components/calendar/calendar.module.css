@@ -1,0 +1,172 @@
+.container_card_general {
+    background-image: url("../../assets/img/triathlon.png");
+    background-size: cover;
+    display: grid;
+    height: 80vh;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    justify-items: center; /* Alinea los elementos horizontalmente al centro */
+    align-items: center; /* Alinea los elementos verticalmente al centro */ 
+    grid-auto-flow: row;
+    gap: 10px; /* Espaci o entre los contenedores */
+    
+  }
+
+.container_card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: yellowgreen;
+    color:white;
+    margin: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 9px 9px;
+    height: 700px;
+    width: 240px;
+  
+}
+
+.card_type{
+    margin-bottom: 5px;
+}
+
+.container_day_text{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container_data_train{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    gap: 20px;
+
+}
+
+.ul {
+    list-style-type: none; /* Quita los marcadores de lista */
+    margin: 0; /* Quita el margen predeterminado */
+    padding: 0;
+    font-size: 1.2rem; /* Si es necesario, quita el relleno predeterminado */
+}
+
+.container_img{
+    position:absolute;
+    display: flex;
+    bottom: 1px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.img_container{
+    width: 200px;
+}
+ 
+.button_assist{
+    background-color:#008000 ;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    width:50%;
+    border-radius: 50px;
+    border: none;
+    letter-spacing: 2px;
+}
+
+.button_cancel{
+    background-color:red ;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    width:50%;
+    border-radius: 50px;
+    border: none;
+    letter-spacing: 2px;
+}
+.button_assist:hover{
+    color: blue;
+}
+
+.button_cancel:hover{
+    color: blue;
+}
+
+.container_button {
+    position: absolute;
+    display: flex;
+    justify-content: center; /* Alinea los elementos horizontalmente al centro */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    bottom: 0;
+    left: 50%; /* Coloca el contenedor en el centro horizontal de su elemento contenedor */
+    transform: translateX(-50%); /* Corrige la posición para que el contenedor esté centrado */
+    width: 70%;
+    margin: 10px;
+    gap: 20px;
+}
+
+.container_description {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.modal::backdrop{
+    background-color: rgba(128, 128, 128, 0.5);  
+}
+
+.container_modal{
+    position: fixed;
+    top:50vh;
+    left: 50vh;
+    background: linear-gradient(90deg, rgba(76, 175, 80, 0.5) 0%, rgba(76, 175, 80, 1) 100%);
+    border-radius: 8px;
+    padding: 20px;
+    border:solid 1px white;
+    width: 500px;
+}
+
+.container_modal h1{
+    color: white;
+    padding: 10px;
+    letter-spacing: 5px;
+}
+
+.container_modal p{
+    color: white;
+    padding: 10px;
+    letter-spacing: 5px;
+}
+
+.container_buttons_modal{
+    display: flex;
+    justify-content: center; /* Alinea los elementos horizontalmente al centro */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    gap: 20px; /* Espaci o entre los contenedores */
+}
+.container_calendar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.calendar{
+    padding: 0;
+    background-color: #008000;
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+

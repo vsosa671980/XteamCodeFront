@@ -1,0 +1,9 @@
+/* styles/globals.css */
+::-webkit-calendar-picker-indicator {
+    background-color: #008000 !important; /* Usa !important para asegurarte de que los estilos se apliquen */
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+  }

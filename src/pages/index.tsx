@@ -5,6 +5,7 @@ import Prices from "./prices/Prices";
 import LoginComponent from "@/components/Login/LoginComponent";
 import LayoutUSerRegistered from "@/components/LayoutImg/LayoutUserRegistered";
 import CreateForm from "@/components/CreateElelemtsForm/CreateForm";
+import Calendar from "@/components/calendar/Calendar";
 
 
 
@@ -12,7 +13,7 @@ import CreateForm from "@/components/CreateElelemtsForm/CreateForm";
 export default function Home() {
   return (
     <>
-      <LayoutImg />
+      <Calendar />
      
     </>
   );

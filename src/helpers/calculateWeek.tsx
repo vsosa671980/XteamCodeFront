@@ -31,3 +31,6 @@ function calculateWeek(today: Date, next: boolean = false): Week {
 
     return week;
 }
+
+
+export default calculateWeek;
