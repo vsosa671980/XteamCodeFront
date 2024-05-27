@@ -70,3 +70,55 @@
 .imgLogo{
     width: 150px;
 }
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .general_nav_container{
+        display: flex;
+        align-items: center;
+        background-color: black;
+        width: 100vh;       
+    }
+
+    .nav_container_img{
+     
+        display: flex;
+        justify-content: center;
+        gap:30px
+    
+    }
+    .imgLogo{
+        width: 300px;
+    }
+
+    .nav_container_news{
+        display: flex;
+       
+       
+    }
+    .nav_container_news li{
+        display: flex;
+        padding: 20px;
+    }
+
+.login{
+    margin-right: 40px;
+    font-size: 50px;
+    color: white;
+    border-radius: 2px solid green;
+    background-color: green;
+    padding: 18px;
+    border-radius: 20px;
+}
+    
+
+   
+   
+    
+
+
+  
+  }

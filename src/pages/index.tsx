@@ -1,20 +1,26 @@
-import GeneralMenuComponent from "@/components/GeneralMenu/GeneralMenuComponent";
+
 import LayoutImg from "@/components/LayoutImg/LayoutImg";
-import Register from "./user/Register";
-import Prices from "./prices/Prices";
-import LoginComponent from "@/components/Login/LoginComponent";
-import LayoutUSerRegistered from "@/components/LayoutImg/LayoutUserRegistered";
-import CreateForm from "@/components/CreateElelemtsForm/CreateForm";
-import Calendar from "@/components/calendar/Calendar";
+import {UserContext} from  "../Context/UserContext";
+import { Authentication } from '@/helpers/Authentification';
+import { useContext, useEffect, useState } from "react";
 
 
 
+export default  function Home() {
 
-export default function Home() {
+  type context = {}
+
+  const [userLog, setUserLog] = useState({
+    rol:"",
+    name:"",
+    verificated:"",
+    status:""
+  });
+  //Get the user logged
   return (
-    <>
-      <Calendar />
-     
-    </>
+ 
+       <LayoutImg />
+
+   
   );
 }

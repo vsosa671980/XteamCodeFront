@@ -24,6 +24,7 @@ export default function Calendar() {
         console.log(e.target.value)
     }
 
+    // Do call to server for get the training between the actual date
     useEffect(() => {
         console.log(date)
         console.log(week)
@@ -78,9 +79,6 @@ export default function Calendar() {
         let calculateDay = dayNames[dayWeek];
         return calculateDay;
     }
-
- 
-
     return (
         <>
             <GeneralMenuComponent />

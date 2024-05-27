@@ -4,16 +4,17 @@ import style from "./create.module.css"
 
 interface Props {
   closeModal: () => void;
+  message:string;
 }
 
-export default function Created({ closeModal }: Props) {
-  const modalRef = useRef<HTMLDialogElement | null>(null);
-  const router = useRouter();
+export default function Created({ closeModal,message }: Props) {
+  //const modalRef = useRef<HTMLDialogElement | null>(null);
+  //const router = useRouter();
 
   return (
     <div>
           <div className={style.container_modal}>
-            <h1>Creado !!</h1>
+            <h1>{message}</h1>
             <button className="close" onClick={closeModal}>
               Close
             </button>

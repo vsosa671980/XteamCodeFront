@@ -33,8 +33,6 @@ export default function CreateForm<T extends ReactNode>({ data,title,receivedDat
          const response = await handleSendData(url,object)
          //Call the received Function passing url and Object
          receivedData(response)
-    
-        
     }
 
     return ( 

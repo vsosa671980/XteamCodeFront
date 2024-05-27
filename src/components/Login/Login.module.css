@@ -1,8 +1,6 @@
 .modal::backdrop{
     background-color: rgba(128, 128, 128, 0.5);  
 }
-
-
 .container_login{
     
   position: fixed;
@@ -51,7 +49,9 @@
   align-items: center;
   border-radius: 90px;
   border: none;
-  text-indent: 10px;
+  text-indent: 20px;
+  text-align: center; 
+  font-size: 30px;
 }
 
 .input::placeholder{
@@ -111,3 +111,105 @@
    }
  
 
+   .container_span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    letter-spacing: 2px;
+  
+   }
+
+   .container_span_span{
+    color: red;
+    letter-spacing: 2px;
+    font-weight: 400;
+
+   }
+
+.container_loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+/*  Responsive style */
+
+@media screen and (max-width: 768px) {
+
+  
+  .container_login{
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg, rgba(76, 175, 80, 0.5) 0%, rgba(76, 175, 80, 1) 100%);
+    border-radius: 8px;
+    width: 90%;
+    height: 50%;
+    
+  }
+
+  .form_login_text{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: white;
+  }
+  
+  .form_login_text h1{
+    font-size: 80px;
+  }
+
+  .input{
+    width:90%; /* Ancho del input */
+    height: 100px;
+    margin: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+    border-radius: 90px;
+    border: none;
+    text-indent: 20px;
+    text-align: center; 
+    font-size: 30px;
+  }
+  
+  .input::placeholder{
+    text-indent: 10px;
+    font-size: 50px;
+  }
+
+  .button_login{
+    width:90%; /* Ancho del input */
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    border-radius: 90px;
+    border: none;
+    background-color: yellowgreen;
+    color: white;
+    cursor: pointer;
+    font-size: 3rem;
+  }
+  
+  .container_remember_login p{
+    margin: 40px;
+    color: white;
+    font-size: 2.5rem;
+   }
+  
+   .span{
+    font-size: 2.5rem;
+   }
+ 
+
+
+
+
+
+
+
+}

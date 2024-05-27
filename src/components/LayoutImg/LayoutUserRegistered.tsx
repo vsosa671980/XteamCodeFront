@@ -15,8 +15,7 @@ export default function LayoutUSerRegistered() {
     if (modalRef.current) {
       modalRef.current.showModal();
     }
-  }
-
+  };
   return (
     <>
     <GeneralMenuComponent />

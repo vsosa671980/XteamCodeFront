@@ -5,10 +5,12 @@ import React from 'react'
 import style from "./prices.module.css";
 
 export default function Prices() {
+
+  
   return (
     <div>
       
-        <GeneralMenuComponent  />
+       
         <div className={style.container_text}>
             <h1>¡Entrena con nosotros, únete a Xteam Triathlon!</h1>
         </div>
@@ -19,9 +21,6 @@ export default function Prices() {
         <div>
             <CadsPricesComponents />
         </div>
-
-
-      
     </div>
   )
 }

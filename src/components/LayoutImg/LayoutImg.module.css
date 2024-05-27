@@ -76,3 +76,113 @@
 
 }
 
+/* mobile styles */
+
+@media only screen and (max-width: 768px) {
+  
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vh;
+        height: 1100px;
+    }
+
+        
+.container_text{
+    position:relative;
+    top:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    margin-left: 50px;
+    color: green
+}
+
+.container_text h1{
+    font-size: 5rem;
+    font-weight: 800;
+    color: green;
+    letter-spacing: 20px;
+
+}
+.container_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:250px
+}
+
+.container_button_button{
+    padding: 25px 40px;
+    border-radius: 10px;
+    border: none;
+    background-color:#4CAF50;
+    cursor: pointer;
+    color: white;
+    width: 500px;
+    height: 180px;
+    font-size: 3rem;
+}
+.container_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    margin-top: 80px;
+    gap: 30px;
+    flex-direction: column;
+}
+.container_logo h1{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-left: 100px;
+    flex-wrap: wrap;
+    font-size: 4rem;
+    font-weight: 800;
+    color: green;
+   
+}
+
+.container_logo h3{
+    font-size: 40px;
+    text-align: justify;
+    margin-left: 95px;
+    font-weight: 500;
+}
+
+.container_fundaments{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vh;
+    height: 1100px;
+    gap: 20px;
+
+}
+
+.container_fundaments h1{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    color: green;
+    
+}
+
+.container_fundaments p{
+    font-size: 2.2rem;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+    }
+   
+  
+    /* Otros estilos específicos para dispositivos móviles */
+  

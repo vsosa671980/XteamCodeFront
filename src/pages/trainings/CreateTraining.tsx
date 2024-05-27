@@ -23,7 +23,7 @@ export default function CreateTraining() {
     const returnList = () => {
       let modal  = modalRef.current
       modal?.close()
-      router.push("//trainings/ListTraings")
+      router.push("/trainings/ListTraings")
     }
 
     const hanldeResponseFromServer = ((response:ServerResponse) => {
