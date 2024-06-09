@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 interface UserLog {
+  id: number,
   rol: string;
   name: string;
   verificated: string;
@@ -14,6 +15,7 @@ interface UserContextType {
 
 const user: UserContextType = {
   userLog: {
+    id:0,
     rol: 'valor',
     name: 'valor',
     verificated: 'valor',
@@ -23,7 +25,23 @@ const user: UserContextType = {
     // función para actualizar el registro del usuario
   }
 };
+
+
+interface UpdateForm {
+  data: {};
+  setUpdateForm: React.Dispatch<React.SetStateAction<[]>>;
+}
+const updateForm: UpdateForm = {
+  data: {},
+  setUpdateForm: () => {
+    // función para actualizar el registro del usuario
+  }
+};
+
+
+export const UpdateFormContext = createContext<UpdateForm>(updateForm)
 export const UserContext = createContext<UserContextType>(user);
+
 
 
 

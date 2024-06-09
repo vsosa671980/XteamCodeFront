@@ -12,9 +12,7 @@
     text-align: center;
     padding:10px;
     background-color: yellowgreen;
-    color: white;;
-    
-
+    color: white;
 }
 
  .td{
@@ -38,13 +36,17 @@
 }
 
 .img_changes {
+  background: transparent;
   width: 30px;
   fill: blue; /* Color inicial */
-  transition: fill 0.3s ease; /* Transición suave */
+  transition: fill 0.3s ease; 
+  text-decoration: none;;/* Transición suave */
+
 }
 
 .img_changes:hover {
-  fill: red; /* Color al pasar el ratón por encima */
+  fill: red;
+  cursor: pointer; /* Color al pasar el ratón por encima */
 }
 
 .pagination {
@@ -84,4 +86,8 @@ tr.pagination td:hover{
 
 .number_page_active{
   color: blue;
+}
+
+.imgTrain {
+  width: 200px;
 }

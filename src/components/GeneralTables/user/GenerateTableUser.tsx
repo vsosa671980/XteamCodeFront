@@ -1,4 +1,4 @@
-import GeneralTablesComponent from '@/components/GeneralTables/GeneralTablesComponent'
+import GeneralTablesComponent from "../user/GenerateTablesComponent"
 import React, { useEffect } from 'react'
 
 

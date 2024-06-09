@@ -3,6 +3,8 @@ import GeneralMenuComponent from '../GeneralMenu/GeneralMenuComponent'
 import style from "./createform.module.css"
 import Created from '../ModalAdvices/Created';
 import { handleSendData } from '@/helpers/sendDataForCreate'
+import { sendDataToServer } from '@/hooks/SendDataToServer';
+import { serialize } from 'v8';
 
 
 interface Props<T> {
@@ -10,31 +12,49 @@ interface Props<T> {
     title:string// Usamos el tipo genérico T para definir el tipo del array
     receivedData:any
     url:string //
+    object:Record<string, any>;
 }
 
-export default function CreateForm<T extends ReactNode>({ data,title,receivedData,url}: Props<T>) {
+export default function CreateForm<T extends ReactNode>({ data,title,receivedData,url,object}: Props<T>) {
+    
+   
+
+    const [defaultObject,setDefaultObject] = useState (object);
+   
+
+  
+  
 
     const handelSubmitForm =async (event: { preventDefault: () => void; target: any; })=>
         {
          // Remove the normal shape of the form
          event.preventDefault()
+        
          //Create a new formFataObject
          const formData = new FormData(event.target)
          //Create Object empty
-         const object: { [key: string]: any } = {}; 
+         let object: { [key: string]: any } = {}; 
          //Obtein the key(name, value) of each input for creating the object
          formData.forEach((value, key) => {
              object[key] = value
-          
              
          })
+
+         if(defaultObject.id){
+            object = {
+                id:defaultObject.id,
+                dataObject:object
+            }
+
+          
+         }
          //Call the received Function passing url and Object
          //Send the data to server
-         const response = await handleSendData(url,object)
+         const response = await sendDataToServer(url,object)
          //Call the received Function passing url and Object
+         console.log(response)
          receivedData(response)
     }
-
     return ( 
         <div>
             <div className={style.general_container}>
@@ -49,17 +69,17 @@ export default function CreateForm<T extends ReactNode>({ data,title,receivedDat
                                     </div>
                                     <div>
                                        { item === "description"? 
-                                       <textarea id={item?.toString()} className={style.input} name={item?.toString()}></textarea> :
-                                       <input type="text" id={item?.toString()} className={style.input} name={item?.toString()}/>}
+                                       <textarea id={item?.toString()} className={style.input} name={item?.toString()}  defaultValue={object[item?.toString() as string]}></textarea> :
+                                       <input type="text" id={item?.toString()} className={style.input} name={item?.toString()}  defaultValue={defaultObject[item?.toString() as string]}/>}
                                     </div>
                                     
                                 </div>
                             )
                         })
                     }
-
                     <div>
-                        <button type="submit" className={style.button}>Crear</button>
+                        {defaultObject.id ? <button type="submit" className={style.button}>Actualizar</button>
+                        :<button type="submit" className={style.button}>Crear</button>}
                     </div>
                 </form>
             </div>

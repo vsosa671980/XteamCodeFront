@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import  style from "./createButton.module.css"
 import { table } from 'console';
 import Link from 'next/link';
 import { Utils } from '@/helpers/utils';
+import { UpdateFormContext } from '@/Context/UserContext';
 
 
 
@@ -13,12 +14,16 @@ interface Props {
 
 export default function CreateButton({tableName}:Props) {
 
-  const[link,setLink]  = useState("")
+  const contextForm = useContext(UpdateFormContext);
 
+  const[link,setLink]  = useState("")
   useEffect(() => {
     console.log(tableName)
     let link = Utils.createLink(tableName);
     setLink(link);
+    console.log(link)
+   // Reset the contextForm
+    contextForm.setUpdateForm([])
   }, [tableName])
 
   return (

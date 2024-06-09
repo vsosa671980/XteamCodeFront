@@ -1,5 +1,6 @@
 import {jwtDecode} from 'jwt-decode'
 import { LocalStorage } from './LocalStorage'
+import { TokenPayload } from '@/interfaces/payloadToken';
 
 export class Authentication{
     public static async getUser(){
@@ -8,6 +9,8 @@ export class Authentication{
             if(token){
                 const decoded: TokenPayload = jwtDecode(token);
                 const user = {
+                    id:decoded.id,
+                  
                     rol:decoded.rol,
                     name:decoded.name,
                     verificated:decoded.verificated,

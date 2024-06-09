@@ -3,6 +3,7 @@ import LayoutImg from "@/components/LayoutImg/LayoutImg";
 import {UserContext} from  "../Context/UserContext";
 import { Authentication } from '@/helpers/Authentification';
 import { useContext, useEffect, useState } from "react";
+import Calendar from "@/components/calendar/Calendar";
 
 
 
@@ -20,6 +21,7 @@ export default  function Home() {
   return (
  
        <LayoutImg />
+     
 
    
   );

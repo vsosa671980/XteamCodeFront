@@ -20,7 +20,7 @@ export default function LoginComponent({ modalRef }: LoginComponentProps) {
   const [rolUser,setRolUser] = useState("");
   const [visible, setVisible] = useState(false);
   const userLogged = useContext(UserContext)
-  const setUserLog = userLogged?.setUserLog
+
 
   const HandleRegistered= (message:string) => {
     setUserRegistered(message)
@@ -42,7 +42,7 @@ export default function LoginComponent({ modalRef }: LoginComponentProps) {
          object[key] = value
      })
      // Send data to server
-     const response =await  sendDataToServer("http://localhost:8000/user/login",object)
+     const response =await  sendDataToServer("http://localhost:8000/users/login",object)
      console.log(response.status)
      if(response.status === "errorVerification"){
        HandleRegistered("Necesitas Verificar Correo")
@@ -55,8 +55,9 @@ export default function LoginComponent({ modalRef }: LoginComponentProps) {
       LocalStorage.setLocalStorage(token)
       setVisible(true)
       const user =await Authentication.getUser();
+      console.log("usuario Logeado",user)
       if(user){
-        setUserLog(user)
+        userLogged.setUserLog(user)
       }
       const timeout = setTimeout(() => {
         setVisible(false); // Ocultar el loader después de 5 segundos0
@@ -79,7 +80,7 @@ export default function LoginComponent({ modalRef }: LoginComponentProps) {
       modalRef.current.close();
     }
   }
-
+  console.log(userLogged.userLog)
   return (
     <div>
       <dialog className={style.modal} ref={modalRef}>

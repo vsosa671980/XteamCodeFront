@@ -1,0 +1,38 @@
+.pagination {
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .img_pagination{
+    width: 35px;
+    fill: blue; /* Color inicial */
+    
+  }
+  
+  
+  
+  tr.pagination td{
+    font-size: 1.2rem;
+    border: 2px solid black;
+    padding: 10px 15px;
+    color: white;
+    background-color: yellowgreen;
+    border-color: #dddddd;
+    border-radius: 20px;
+  
+  }
+  
+  tr.pagination td:hover{
+    color: blue;
+    cursor: pointer;
+    background-color: #9ACD32
+    
+  }
+  
+  .number_page_active{
+    color: blue;
+  }

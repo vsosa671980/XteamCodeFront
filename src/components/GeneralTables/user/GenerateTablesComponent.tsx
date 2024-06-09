@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
-import style from "./GeneralTables.module.css";
+import style from "../GeneralTables.module.css"
 import Link from 'next/link';
-import Pagination from '../pagination/Pagination';
+import Pagination from '../../pagination/Pagination'
 import { sendDataToServer } from '@/hooks/SendDataToServer';
 import { useRouter } from 'next/router';
 import { UpdateFormContext } from '@/Context/UserContext';
@@ -34,7 +34,6 @@ export default function GeneralTablesComponent<T extends Record<string, any>>({d
     //Get the context for pass the values of form
     const contextForm = useContext(UpdateFormContext);
 
-    const[img,setImg] = useState("");
   
     // Function to update the data
     const updateData = async (event:React.MouseEvent<HTMLButtonElement>) =>{
@@ -44,16 +43,12 @@ export default function GeneralTablesComponent<T extends Record<string, any>>({d
                 id:idData,
             }
             console.log(id)
-            const url = `http://localhost:8000/${tableName}/findById`;
-            console.log(url);
+            const url = `http://localhost:8000/users/findById`;
             // Get the object from database
             const object =await sendDataToServer(url,id)
-            console.log(object)
-            const objectGet = object.training
-            const date = object.training.date.split("T")[0];
-            object.training.date = date;
-            contextForm.setUpdateForm(objectGet);
-            router.push(`/${tableName}/create`)
+            
+            contextForm.setUpdateForm(object);
+            router.push(`/user/create`)
            }   
         }
        /*
@@ -70,19 +65,12 @@ export default function GeneralTablesComponent<T extends Record<string, any>>({d
            }   
         }
 
-        const redirectTraining = async(event:React.MouseEvent<HTMLButtonElement>)  =>{
-            let idData = event.currentTarget.id
-            let id = {id:idData}
-            const url = `http://localhost:8000/${tableName}/findById`;
-            const object =await sendDataToServer(url,id)
-            console.log(object)
-            const objectGet = object.training
-            const date = object.training.date.split("T")[0];
-            object.training.date = date;
-            contextForm.setUpdateForm(objectGet);
-            router.push("/trainings/training")
-        }
+        const [img,setImg] = useState("")
 
+        const handleImg  =  (traingName:string) => {
+            console.log(traingName)
+               
+        }
         //handleImg();
         
     // Call to the server 
@@ -106,13 +94,9 @@ export default function GeneralTablesComponent<T extends Record<string, any>>({d
                             <th key={index} className={style.th}>{key}</th>
                         ))}
                           <th className={style.th}>Actualizar</th>
-                        
                             {
                                 tableName.name !== "users" ? <th className={style.th}>Eliminar</th> : null
                             }
-
-                           <th className={style.th}>Mostrar</th>
-                            
                     </tr>
                 </thead>
                 <tbody>
@@ -141,11 +125,6 @@ export default function GeneralTablesComponent<T extends Record<string, any>>({d
                                   </button>
                                 </td> : null
                              }
-                             <td className={style.td}>
-                                <button id={item.id} onClick={redirectTraining}>
-                                    <img src='/assets/img/papel.png' className={style.img_changes}></img>
-                                </button>
-                             </td>
                         </tr>
                     ))}
                   

@@ -67,8 +67,8 @@ export default function GeneralMenuComponent() {
                     <li><img src="/assets/img/xteam.webp" alt="" className={style.imgLogo} onClick={returnToMainPage} /></li>
                     {userRoles === "admin" && (
                          <div className={style.nav_container_menu}> 
-                          <li><Link href="/admin/Users" className={style.link_menus}>Usuarios</Link></li>
-                            <li><Link href="/trainings/ListTraings" className={style.link_menus}>Entrenamientos</Link></li>
+                          <li><Link href="/user/list" className={style.link_menus}>Usuarios</Link></li>
+                            <li><Link href="/trainings/list" className={style.link_menus}>Entrenamientos</Link></li>
                             <li><Link href="#" className={style.link_menus}>Noticias</Link></li>
                             <li><Link href="/competitions/ListCompetitions" className={style.link_menus}>Competiciones</Link></li>
                             <li><Link href="/subcriptions/listsubcriptions" className={style.link_menus}>Subscripciones</Link></li>

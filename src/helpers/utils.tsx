@@ -5,28 +5,29 @@ export class Utils {
     public static createLink(tableName:string):string {
         let link:string =""
         switch (tableName) {
+            case "users":
+              link = "/user/create"
+              break;
             case "Competitions":
-                link ="/competitions/CreateCompetition"
-                
+                link ="/competitions/create"          
                 break;
-            case "Trainings":
-                 link ="/trainings/CreateTraining"
+            case "trainings":
+                 link ="/trainings/create"
                 
                 break;
             case "Users":
-                 link ="/competitions/CreateCompetitions"
+                 link ="/competitions/create"
                 break;
             case "News":
-                 link ="/competitions/CreateCompetitions"
+                 link ="/competitions/create"
                 break;
             case "Subscriptions":
-                 link ="/subcriptions/CreateSubscription"
+                 link ="/subcriptions/create"
 
                 break;
             default:
                 break;
         }
-
         return link;
         
     }
