@@ -8,7 +8,7 @@ import {ServerResponse} from "../../interfaces/ServerResponse"
 export default function Register() {
 
   const [data, setData] = React.useState({})
-  const url = "http://localhost:8000/user/crear"
+  const url = "http://localhost:8000/users/register"
   const [response, setResponse] = useState<ServerResponse| null>(null);
   const router = useRouter();
 

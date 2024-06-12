@@ -11,6 +11,7 @@ export const sendDataToServer = (url: string, object: any) => {
     return fetch(url, requestOptions)
         .then(response => response.json())
         .then(json => {
+            console.log("soy el Json",json);
             return json; // Devolver los datos recibidos del servidor
         })
         .catch(error => {
